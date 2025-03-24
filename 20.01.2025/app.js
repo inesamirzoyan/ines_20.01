@@ -15,15 +15,16 @@
 // document.write("Dzez anhrajesht e motavorapes" + banadzev + "litr jur orakan");
 // alert("Dzez anhrajesht e motavorapes" + banadzev + "litr jur orakan")
 
-var dram = prompt("Mutqagrel gumary");
+var dram = prompt("Մուտքագրեք գումարը դրամով:");
+
 var evro = 412;
-var rublI = 3.82;
+var rubli = 3.82;
 var gel = 140;
-EUR = dram / evro;
-RUB = dram / rubli;
-GEL = dram / gel;
-document.write("Dzer gumary kazmum e <br><br>" + "EUR <br><br>" + "RUB <br><br>" + "GEL <br><br>");
-alert(EUR);
-alert(RUB);
-alert(GEL);
+
+let EUR = (dram / evro).toFixed(2);
+let RUB = (dram / rubli).toFixed(2);
+let GEL = (dram / gel).toFixed(2);
+
+document.write("Ձեր գումարը կազմում է՝ <br><br>" + "<br><br> EUR = " + EUR + "<br><br> RUB = " + RUB + "<br><br> GEL = " + GEL);
+
 
